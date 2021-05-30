@@ -14,14 +14,13 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {NavModule} from './pages/nav/nav.module';
-import {ListComponent} from './pages/list/list.component';
 import {MatCardModule} from "@angular/material/card";
+import {ListModule} from "./pages/list/list.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +36,8 @@ import {MatCardModule} from "@angular/material/card";
     MatTableModule,
     MatSortModule,
     NavModule,
-    MatCardModule
+    MatCardModule,
+    ListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
