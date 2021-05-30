@@ -1,0 +1,36 @@
+<mat-toolbar color="warn">
+  <mat-toolbar-row>
+    <button mat-button [routerLink]="'/home'">
+      <mat-icon>house</mat-icon>
+      HOME
+    </button>
+    <button mat-button [routerLink]="'/list'">
+      <mat-icon>person</mat-icon>
+      Organization
+    </button>
+    <button mat-button [routerLink]="'/about'">
+      <mat-icon>bookmark</mat-icon>
+      About
+    </button>
+    <button mat-button [matMenuTriggerFor]="menu">
+      user
+      <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>person</mat-icon>
+        <span>Profil</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>settings</mat-icon>
+        <span>Beállítások</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>arrow_back</mat-icon>
+        <span>Kijelentkezés</span>
+      </button>
+    </mat-menu>
+
+  </mat-toolbar-row>
+</mat-toolbar>

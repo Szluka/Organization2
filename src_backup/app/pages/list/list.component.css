@@ -1,0 +1,9 @@
+table {
+  width: 100%;
+}
+
+.action-btn {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}

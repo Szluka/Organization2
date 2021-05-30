@@ -1,0 +1,10 @@
+<div class="not-nav">
+  <mat-card class="item" *ngFor="let item of menu" [routerLink]="item.url">
+    <mat-card-header>{{item.name}}</mat-card-header>
+    <mat-card-content *ngIf="item.name === 'HOME'">
+      <br>
+      <img [src]="image_src" alt="FHIR">
+    </mat-card-content>
+  </mat-card>
+</div>
+

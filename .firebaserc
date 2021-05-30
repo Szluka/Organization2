@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "organization3-7553c": {
+      "hosting": {
+        "Organization2": [
+          "organization3-7553c"
+        ]
+      }
+    }
+  }
+}
