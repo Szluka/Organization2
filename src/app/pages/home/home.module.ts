@@ -9,11 +9,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {RouterModule} from '@angular/router';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {AppRoutingModule} from "../../app-routing.module";
-import {MatTableModule} from "@angular/material/table";
-import {MatSortModule} from "@angular/material/sort";
-import {NavModule} from "../nav/nav.module";
 
 @NgModule({
   declarations: [HomeComponent],
@@ -29,12 +24,7 @@ import {NavModule} from "../nav/nav.module";
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    RouterModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    MatTableModule,
-    MatSortModule,
-    NavModule,
+    RouterModule
   ]
 })
 export class HomeModule { }

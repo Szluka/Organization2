@@ -1,0 +1,17 @@
+<form [formGroup]="form">
+  <h3>New Organization</h3>
+  <mat-form-field class="max-width">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Name" focus formControlName="name" required>
+  </mat-form-field>
+  <mat-form-field class="max-width">
+    <mat-label>Alias</mat-label>
+    <input matInput placeholder="also know as..." formControlName="alias" required>
+  </mat-form-field>
+  <br>
+  <mat-checkbox formControlName="active">Active</mat-checkbox>
+  <div style="display: flex; justify-content: flex-end;">
+    <button mat-raised-button style="margin-right: 20px;" (click)="dialogRef.close()" class="margin-right">Cancel</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="form.value" [disabled]="form.invalid">Add</button>
+  </div>
+</form>

@@ -13,24 +13,20 @@
       About
     </button>
     <button mat-button [matMenuTriggerFor]="menu">
-      user
+      <mat-icon>transfer_within_a_station</mat-icon>
+      Auth
       <mat-icon>arrow_drop_down</mat-icon>
     </button>
 
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>person</mat-icon>
-        <span>Profil</span>
+      <button mat-menu-item [routerLink]="'/login'">
+        <mat-icon>arrow_forward</mat-icon>
+        <span>Login</span>
       </button>
-      <button mat-menu-item disabled>
-        <mat-icon>settings</mat-icon>
-        <span>Beállítások</span>
-      </button>
-      <button mat-menu-item>
+      <button mat-menu-item (click)="logout()">
         <mat-icon>arrow_back</mat-icon>
-        <span>Kijelentkezés</span>
+        <span>Logout</span>
       </button>
     </mat-menu>
-
   </mat-toolbar-row>
 </mat-toolbar>

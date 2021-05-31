@@ -19,10 +19,10 @@ export class Organization {
   endpoint?: Endpoint;
 
   constructor(name?: string, alias?: string, active?: boolean) {
-  this.name = name;
-  this.alias = alias;
-  this.active = active;
-}
+    this.name = name;
+    this.alias = alias;
+    this.active = active;
+  }
 }
 
 

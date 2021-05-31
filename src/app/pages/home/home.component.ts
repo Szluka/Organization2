@@ -9,7 +9,7 @@ export interface MenuCard {
 const MENU: MenuCard[] = [
   {position: 1, name: 'HOME', url: '/home'},
   {position: 2, name: 'LIST', url: '/list'},
-  {position: 3, name: '-', url: '/blank'},
+  {position: 3, name: 'LOGIN', url: '/login'},
   {position: 4, name: 'ABOUT', url: '/about'},
 ];
 
